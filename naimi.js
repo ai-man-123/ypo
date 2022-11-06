@@ -213,12 +213,12 @@ participant: `0@s.whatsapp.net`, ...(from ?
 }
 	const kmd = (teks) => {
 naimi.sendMessage(from, { text : teks, contextInfo:{externalAdReply:{
-title:"KARUTA BOT",
+title:"lynxbot",
 body: "Free WhatsApp Bot", 
 thumbnail: fs.readFileSync("./karuta/webpmobile.jpg"),
 mediaType:1,
-mediaUrl: 'https://www.instagram.com/Yukishima3_',
-sourceUrl: "https://www.instagram.com/Yukishima3_"}}}, { quoted: m })
+mediaUrl: 'https://www.instagram.com/aiman1_23',
+sourceUrl: "https://www.instagram.com/aiman1_23"}}}, { quoted: m })
 }
 try {
 let isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -236,7 +236,7 @@ let karutaset = global.db.settings[botNumber]
 if (typeof karutaset !== 'object') global.db.settings[botNumber] = {}
 if (karutaset) {
 if (!isNumber(karutaset.status)) karutaset.status = 0
-if (!('autobio' in karutaset)) karutaset.autobio = false
+if (!('autobio' in karutaset)) karutaset.autobio = true
 if (!('templateImage' in karutaset)) karutaset.templateImage = false
 if (!('templateVideo' in karutaset)) karutaset.templateVideo = false
 if (!('templateGif' in karutaset)) karutaset.templateGif = false
@@ -244,7 +244,7 @@ if (!('templateMsg' in karutaset)) karutaset.templateMsg = false
 if (!('templateDocument' in karutaset)) karutaset.templateDocument = true
 } else global.db.settings[botNumber] = {
 status: 0,
-autobio: false,
+autobio: true,
 templateImage: false,
 templateVideo: false,
 templateGif: false,
@@ -652,9 +652,9 @@ delete this.suit[roof.id]
 ● Library : Baileys MD
 ● Language : JavaScript
 
-Indonesia Timur :${moment().utcOffset('+0900').format('HH:mm')} WIT
-Indonesia Tengah :${moment().utcOffset('+0800').format('HH:mm')} WITA
-Indonesia Barat :${moment().utcOffset('+0700').format('HH:mm')} WIB`
+Waktu Timur :${moment().utcOffset('+0900').format('HH:mm')} WIT
+Waktu Tengah :${moment().utcOffset('+0800').format('HH:mm')} WITA
+Waktu Barat :${moment().utcOffset('+0700').format('HH:mm')} WIB`
 	listmn = `
 _*MAIN COMMAND*_
 • ${prefix}limit
@@ -851,24 +851,6 @@ _*STIKER MENU*_
 • ${prefix}emojimix
 • ${prefix}smeme
 
-_*NEWS MENU*_
-• ${prefix}jalantikus-meme
-• ${prefix}merdeka-news
-• ${prefix}kontan-news
-• ${prefix}cnbc-news
-• ${prefix}tribun-news
-• ${prefix}indozone-news
-• ${prefix}kompas-news
-• ${prefix}detik-news
-• ${prefix}daily-news
-• ${prefix}inews-news
-• ${prefix}okezone-news
-• ${prefix}sindo-news
-• ${prefix}tempo-news
-• ${prefix}antara-news
-• ${prefix}cnn-news
-• ${prefix}fajar-news
-
 _*MAKER MENU*_
 • ${prefix}nulis
 • ${prefix}3dbox
@@ -1021,7 +1003,7 @@ Imgnah = await getBuffer(`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9Gc
 let btn886 = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/Yukishima3_'
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
@@ -1293,7 +1275,7 @@ break
 case 'donasi':
   if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daftar2, daftar3, { quoted: m}) 
     if (isBan) return reply(mess.banned)
-  reply('Donasi seikhlas nya kakak biar bot ini makin keren\nhttps://saweria.co/Yukishima\n\n*GAK MAKSA*')
+  reply('Donasi seikhlas nya kakak biar bot ini bisa on\n\n*GAK MAKSA*')
 break
 case 'premium2':
 if (!isOwner) return reply(mess.owner)
@@ -1535,7 +1517,7 @@ case '͏͏jodohku͏͏': {
 if (!m.isGroup) return reply( mess.group)
 let member = participants.map(u => u.id)
 let me = m.sender
-let jodoh = '6285246027002@s.whatsapp.net'
+let jodoh = '60102810046@s.whatsapp.net'
 let jawab = `👫Jodoh mu adalah
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}\nINI CUMA GAME OK`
@@ -1956,7 +1938,7 @@ for (let i of anu) {
     let btn = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/Yukishima3_'
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
@@ -2034,7 +2016,7 @@ await sleep(1500)
 let btn = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/Yukishima3_'
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
@@ -2117,7 +2099,7 @@ reply(`Kirim Gambar/Video Dengan Caption ${prefix + command}\nDurasi Video 1-9 D
 }
 }
  break
-   case 'stiker': case 'sticker': case 's': case 'stickergif': case 'sgif': {
+   case 'stiker': case 'sticker': case 's': case 'slynx': case 'sgif': {
   if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daftar2, daftar3, { quoted: m}) 
     if (isBan) return reply(mess.banned)
 if (checklimitUser(sender) <= 0) return reply(limitabis)  
@@ -2170,7 +2152,7 @@ break
 case 'command':
   let sections = [
 {
-title: "DAFTAR MENU KARUTA BOT",
+title: "DAFTAR MENU LYNX BOT",
 rows: [
 {title: "𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨", rowId: `mainmenu`, description: `Menampilkan daftar main menu`},
 {title: "𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨", rowId: `groupmenu`, description: `Menampilkan daftar group menu`},
@@ -2184,14 +2166,12 @@ rows: [
 {title: "𝗩𝗢𝗜𝗖𝗘 𝗖𝗛𝗔𝗡𝗚𝗘𝗥", rowId: `voicemenu`, description: `Menampilkan daftar voice changer menu`},
 {title: "𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨", rowId: `ownermenu`, description: `Menampilkan daftar owner menu`},
 {title: "𝗦𝗧𝗜𝗞𝗘𝗥 𝗠𝗘𝗡𝗨", rowId: `stikermenu`, description: `Menampilkan daftar stiker menu`},
-{title: "𝗡𝗘𝗪𝗦 𝗠𝗘𝗡𝗨", rowId: `newsmenu`, description: `Menampilkan daftar news menu`},
 {title: "𝗠𝗔𝗞𝗘𝗥 𝗠𝗘𝗡𝗨", rowId: `makermenu`, description: `Menampilkan daftar maker menu`},
-{title: "𝗔𝗡𝗜𝗠𝗘 𝗠𝗘𝗡𝗨", rowId: `animemenu`, description: `Menampilkan daftar anime menu`},
-{title: "𝗖𝗘𝗥𝗣𝗘𝗡 𝗠𝗘𝗡𝗨", rowId: `cerpenmenu`, description: `Menampilkan daftar cerpen menu`}
+{title: "𝗔𝗡𝗜𝗠𝗘 𝗠𝗘𝗡𝗨", rowId: `animemenu`, description: `Menampilkan daftar anime menu`}
 ]
 },
   {
-title: "MENGOBROL DENGAN SESAMA PENGGUNA",
+title: "lynxbot",
 rows: [{title: "𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗛𝗔𝗧", rowId: `ac`, description: `Menampilkan daftar anonymous chat`}
 ]
 },
@@ -2884,7 +2864,7 @@ listMessage :{
     title: `Hallo ${pushname}`,
     description: `Silahkan Pilih Menunya\nKalo ada yang eror harap dimaklumi\n\n`,
     buttonText: "Menu",
-    footerText: `*© Powered by karuta*`,
+    footerText: `*© Powered by Aiman*`,
     listType: "SINGLE_SELECT",
     sections: [{
 "title": "𝙁𝙞𝙩𝙪𝙧 𝘼𝙬𝙖𝙡 𝘽𝙤𝙩",
@@ -2990,7 +2970,7 @@ listMessage :{
 "rowId": `${prefix}islamicmenu`
 },
 {
-"title": "𝗜𝗻𝗱𝗼𝗻𝗲𝘀𝗶𝗮 𝗠𝗲𝗻𝘂",
+"title": "negara jiran 𝗠𝗲𝗻𝘂",
 "description": "Displays The List Of Indo Features",
 "rowId": `${prefix}indomenu`
 	},
@@ -3002,7 +2982,7 @@ listMessage :{
 ]
 	},
 	{
-"title": "𝙈𝙚𝙣𝙜𝙤𝙗𝙧𝙤𝙡 𝘿𝙚𝙣𝙜𝙖𝙣 𝙎𝙚𝙨𝙖𝙢𝙖 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖",
+"title": "sembang 𝘿𝙚𝙣𝙜𝙖𝙣 𝙎𝙚𝙨𝙖𝙢𝙖 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖",
 "rows": [
 	{
 "title": "𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀 𝗠𝗲𝗻𝘂",
@@ -4093,7 +4073,7 @@ if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daf
     if (isBan) return reply(mess.banned)
 const kantong = checkuangUser(sender)
 if (isPremium) return reply(`┏━━━━━━━[ *ATM* ]━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : ${sender.split("@")[0]}\n┃│➸ UANG : ${kantong}\n┃│➸ Limit : UNLIMITED\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`)
-Anjay =`┏━━━━━━━[ *ATM* ]━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMOR : ${sender.split("@")[0]}\n┃│➸ UANG : ${kantong}\n┃│➸ Limit : ${checklimitUser(sender)}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
+Anjay =`┏━━━━━━━[ *ATM* ]━━━━━━━┓\n┃╭───────────────────\n┃│➸ NAMA : ${pushname}\n┃│➸ NOMBOR : ${sender.split("@")[0]}\n┃│➸ UANG : ${kantong}\n┃│➸ Limit : ${checklimitUser(sender)}\n┃╰───────────────────\n┗━━━━━━━━━━━━━━━━━━━━┛`
 reply(Anjay)
 break
   case 'tes':
@@ -4256,7 +4236,7 @@ reply("Linknya Error")
 }
 break
 case 'kalkulator':
- case 'kal':
+ case 'calc':
    if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daftar2, daftar3, { quoted: m}) 
     if (isBan) return reply(mess.banned)
 if (kuismath.hasOwnProperty(m.sender.split('@')[0])) return reply('Kamu sedang bermain kuis math tidak dapat menggunakan fitur k')
@@ -5668,7 +5648,7 @@ case 'anonymous':
   let btn = [{
 urlButton: {
 displayText: 'Instagram',
-url: 'https://instagram.com/Yukishima3_'
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
@@ -5906,11 +5886,11 @@ reply(`•Namabot : ${setting.botName}
 break
 case 'infoowner':
 pro = `*PROFILE OWNER KARUTA*
-•Nama : Yukishima
-•Umur : 18 Tahun
+•Nama : Muhammad nur aiman :v
+•Umur : 15 Tahun
 •Asal : Bekasi
-•IG   : Yukishima3_
-•FB   : Yukishima
+•IG   : aiman1_23
+•Ttk  : tiktok.com/@aiman_nightsad
 •Saya bukan mastah saya pemula
 •Saya Bukan wibu :v`
 naimi.sendMessage(m.chat, { video: { url:'https://a.uguu.se/XqseYfhr.mp4' }, gifPlayback: true , caption:pro}, { quoted: m })
@@ -5923,28 +5903,28 @@ if (!isRegister) return reply(blomdaftar) & sendButMessage (sender, daftar1, daf
 karutamddd = await reSize(`./karuta/karuta.png`, 200, 200) 
 let bton = [{
 urlButton: {
-displayText: 'DONASI',
-url: 'https://saweria.co/Yukishima'
+displayText: 'TIKTOKメ',
+url: 'tiktok.com/@aiman_nightsad'
 }
 }, {
 urlButton: {
-displayText: 'INSTAGRAM',
-url: 'https://instagram.com/Yukishima3_'
+displayText: 'INSTAGRAMメ',
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
-displayText: 'SIMPLE',
+displayText: 'SIMPLE MENUメ',
 id: 'command'
 }
 }, {
 quickReplyButton: {
-displayText: 'ALL',
+displayText: 'ALL MENUメ',
 id: 'allmenu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'ANONYMOUS CHAT',
-id: 'ac'
+displayText: 'PINGメ',
+id: 'ping'
 }
 }]
 setbot = db.settings[botNumber]
@@ -5961,28 +5941,28 @@ naimi.sendMessage(from, { text: menulist, templateButtons: buttonsDefault, foote
 } else if (setbot.templateDocument) {
 let buttonmenu = [{
 urlButton: {
-displayText: 'DONASI',
-url: 'https://saweria.co/Yukishima'
+displayText: 'TIKTOKメ',
+url: 'tiktok.com/@aiman_nightsad'
 }
 }, {
 urlButton: {
-displayText: 'INSTAGRAM',
-url: 'https://instagram.com/Yukishima3_'
+displayText: 'INSTAGRAMメ',
+url: 'https://instagram.com/aiman1_23'
 }
 }, {
 quickReplyButton: {
-displayText: 'SIMPLE',
+displayText: 'SIMPLE MENUメ',
 id: 'command'
 }
 }, {
 quickReplyButton: {
-displayText: 'ALL',
+displayText: 'ALL MENUメ',
 id: 'allmenu'
 }  
 }, {
 quickReplyButton: {
-displayText: 'ANONYMOUS CHAT',
-id: 'ac'
+displayText: 'PINGメ',
+id: 'ping'
 }
 }]
 naimi.sendMessage(m.chat, { caption: menulist, document: fs.readFileSync('./karuta/karuta.xlsx'), mimetype: `${docs}`, jpegThumbnail:fs.readFileSync("./karuta/menu.png"), fileName: `${setting.botName}`, templateButtons: buttonmenu, footer: `© ${setting.botName} bot`, mentionedJid: [m.sender] })
